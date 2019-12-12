@@ -25,6 +25,7 @@ function polVehicleS(vehicletype)
     while not polVehicle do Citizen.Wait(100) end;
     PlaySoundFrontend(-1, "CONFIRM_BEEP", "HUD_MINI_GAME_SOUNDSET", 1)
     TaskWarpPedIntoVehicle(playerPed, polVehicle, -1)
+    --TriggerServerEvent('dlrp_garage:addKeys', plate)
   end)
 end
 
